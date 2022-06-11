@@ -1,16 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Shop from "./Shop";
+import NavigationBar from "./components/NavigationBar";
+import Home from "./components/Home";
+import Shop from "./components/Shop";
 
 const RouteSwitch = () => {
-    return (
+  return (
+    <div>
       <BrowserRouter>
+        <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
         </Routes>
+
+
       </BrowserRouter>
-    );
-  };
-  
-  export default RouteSwitch;
+    </div>
+  );
+};
+
+export default RouteSwitch;
