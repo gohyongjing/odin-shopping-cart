@@ -12,8 +12,6 @@ const RouteSwitch = () => {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
         </Routes>
-
-
       </BrowserRouter>
     </div>
   );
